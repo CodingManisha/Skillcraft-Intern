@@ -46,7 +46,7 @@ Developed a stopwatch application featuring start, pause, reset, and lap-time fu
 ### 📊 Task 4: To-Do web app
 
 **Description:**
-Worked on various development tasks focused on improving coding practices, logical thinking, and project implementation skills.
+Developed a to-do list web app featuring add tasks, percentage of completed tasks.
 
 **Technologies Used:**
 * HTML
