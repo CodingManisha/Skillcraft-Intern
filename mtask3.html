@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ultimate Tic Tac Toe</title>
+<link rel="stylesheet" href="mtask3.css">
+</head>
+
+<body>
+
+<div class="game">
+
+<h1>⚡ Ultimate Tic Tac Toe</h1>
+
+<div class="players">
+
+<input id="p1" placeholder="Player X">
+<input id="p2" placeholder="Player O">
+
+</div>
+
+
+<div class="score">
+
+<div>
+<h3 id="nameX" style="text-align: center;">Player X</h3>
+<h2 id="scoreX">0</h2>
+</div>
+
+  
+<div>
+<h3 id="nameO" style="text-align: center;">Player O</h3>
+<h2 id="scoreO">0</h2>
+</div>
+
+</div>
+
+
+
+<h2 id="turn">
+Player X Turn
+</h2>
+
+
+
+<div class="board">
+
+<div></div><div></div><div></div>
+<div></div><div></div><div></div>
+<div></div><div></div><div></div>
+
+</div>
+
+
+
+<button onclick="restart()">Restart</button>
+
+<button onclick="clearScore()">
+Reset Score
+</button>
+
+
+</div>
+
+
+<audio id="click">
+<source src="https://www.soundjay.com/buttons/sounds/button-16.mp3">
+</audio>
+
+
+<script src="mtask3.js"></script>
+
+</body>
+</html>
