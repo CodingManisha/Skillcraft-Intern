@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Taskify Dashboard</title>
+<link rel="stylesheet" href="mtask4.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+<aside>
+<h2>✓ Taskify</h2>
+
+<div class="profile">
+<img src="https://i.pravatar.cc/80">
+<h3>Spurthi</h3>
+<p>student@gmail.com</p>
+</div>
+
+
+<nav>
+<p>🏠 All Tasks</p>
+<p>☀ Today <span>5</span></p>
+<p>⭐ Important</p>
+<p>✅ Completed</p>
+<p>🗑 Trash</p>
+</nav>
+
+<div class="mode">
+🌙 Dark Mode
+<button onclick="dark()">ON</button>
+</div>
+
+</aside>
+
+
+
+<!-- Main -->
+
+<section class="main">
+
+<div class="header">
+
+<h1>All Tasks</h1>
+
+<input id="search"
+placeholder="🔍 Search tasks"
+onkeyup="searchTask()">
+
+</div>
+
+
+
+<div class="add">
+
+<input id="task"
+placeholder="What needs to be done?">
+
+
+<select id="priority">
+<option>High</option>
+<option>Medium</option>
+<option>Low</option>
+</select>
+
+
+<button onclick="addTask()">
+Add Task
+</button>
+
+</div>
+
+
+
+<div class="filters">
+<button onclick="filter('all')">All</button>
+<button onclick="filter('High')">🔴 High</button>
+<button onclick="filter('Medium')">🟠 Medium</button>
+<button onclick="filter('Low')">🟢 Low</button>
+</div>
+
+
+
+<ul id="list"></ul>
+
+
+</section>
+
+
+
+<!-- Right -->
+
+<section class="right">
+
+
+<div class="card">
+
+<h2>Progress</h2>
+
+<div class="circle">
+<div id="progress">0%</div>
+</div>
+
+
+<p id="status">
+0 of 0 tasks completed
+</p>
+
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Today's Overview</h2>
+
+<p>Total Tasks : <b id="total">0</b></p>
+<p>Completed : <b id="complete">0</b></p>
+
+</div>
+
+
+</section>
+
+
+</div>
+
+
+<script src="mtask4.js"></script>
+
+</body>
+</html>
